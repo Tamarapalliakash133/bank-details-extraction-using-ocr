@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Passbook Upload</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f4f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            width: 420px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1a237e;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+        input {
+            margin-top: 15px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #1a73e8;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Bank Passbook Upload</h2>
+
+    <p>
+        Please upload a <b>clear image of the bank passbook</b>
+        for accurate processing.
+    </p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="passbook" accept=".jpg,.jpeg,.png,.pdf" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
