@@ -5,4 +5,5 @@ pytesseract
 pydantic 
 langchain-openai
 langchain-core
+gunicorn
 openpyxl
