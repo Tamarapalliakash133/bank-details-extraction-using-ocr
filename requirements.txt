@@ -1,0 +1,8 @@
+flask 
+python-dotenv
+pillow
+pytesseract
+pydantic 
+langchain-openai
+langchain-core
+openpyxl
