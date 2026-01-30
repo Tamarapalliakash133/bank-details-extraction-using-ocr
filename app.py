@@ -13,7 +13,7 @@ from openpyxl import load_workbook
 
 
 load_dotenv()
-
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
 
